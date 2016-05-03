@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-  $ ruby lib/macbeth_analyser.rb
+  $ ./bin/macbeth_analyser
   
 ## Running tests
 
