@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = MacbethAnalyser::VERSION
   spec.authors       = ["Roberto Carlos de Oliveira"]
   spec.email         = ["mr_rco@yahoo.com.br"]
-  spec.summary       = "This analyses Macbeth play, counting speechs by persona"
+  spec.summary       = "This program prints the number of lines spoken by each character in the play."
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }

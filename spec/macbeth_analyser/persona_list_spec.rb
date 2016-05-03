@@ -17,7 +17,7 @@ describe MacbethAnalyser::PersonaList do
     end
 
     context "when persona is new" do
-      it "adds one speech" do
+      it "adds one speech line" do
         subject.add(name)
 
         expect(subject.print).to eql "1 Macbeth"
@@ -25,7 +25,7 @@ describe MacbethAnalyser::PersonaList do
     end
 
     context "when persona already exists" do
-      it "increments speech by one" do
+      it "increments speech lines by one" do
         2.times { subject.add(name) }
 
         expect(subject.print).to eql "2 Macbeth"
@@ -43,7 +43,7 @@ describe MacbethAnalyser::PersonaList do
     let(:name3)    { "BanQUO" }
     let(:speechs3) { 1 }
 
-    it "prints personas order by speechs count" do
+    it "prints personas order by speech lines count" do
       speechs1.times { subject.add(name1) }
       speechs2.times { subject.add(name2) }
       speechs3.times { subject.add(name3) }

@@ -5,6 +5,7 @@ class MacbethAnalyser::PersonaList
 
   def add(name)
     name.capitalize!
+
     return if name == "All"
 
     unless @personas[name]
@@ -15,8 +16,8 @@ class MacbethAnalyser::PersonaList
   end
 
   def print
-    @personas.sort_by{|name, speechs| speechs}.reverse.map do |name, speechs|
-      "#{speechs} #{name}"
+    @personas.sort_by{|name, lines| lines}.reverse.map do |name, lines|
+      "#{lines} #{name}"
     end.join("\n")
   end
 end

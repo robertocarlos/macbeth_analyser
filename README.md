@@ -1,6 +1,6 @@
 # MacbethAnalyser
 
-This analyses Macbeth play, counting speechs by persona.
+This program prints the number of lines spoken by each character in the play.
 
 ## Installation
 
